@@ -1,4 +1,4 @@
-#Landing Page
+# Landing Page
 >A website showcasing projects
 
 This site was built for the [The Odin Project](https://www.theodinproject.com/lessons/foundations-landing-page) foundations course.
