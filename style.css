@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* global rules */
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* sections */
+.section-1 {
+  background-image: url(./images/sands-of-hope.png);
+  background-repeat: no-repeat;
+  background-color: #1f2937;
+}
+
+.section-2 {
+  background-color: red;
+}
+
+/* navigation */
+.navigation-bar {
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #1f2937;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 4em;
+}
+
+.nav-contents {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-bar .header {
+  display: flex;
+  color: #f9faf8;
+  font-size: 24px;
+  align-items: center;
+}
+
+.navigation-bar .links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer {
+  background-color: #1f2937;
+}
+
+/* sidebars and main content */
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.columns {
+  display: flex;
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+}
+
+.sidebar-first {
+  width: 15%;
+  order: 1;
+}
+
+.sidebar-second {
+  width: 15%;
+  order: -1;
+}
+
+/* first main section content */
+.banner {
+  display: flex;
+  margin: 100px 0;
+  height: 25em;
+  gap: 100px;
+}
+
+.left-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.main-hero-text {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+
+.secondary-hero-text {
+  font-size: 18px;
+  color: #e5e7eb;
+  padding-bottom: 8px;
+}
+
+/* sign-up button */
+button {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  padding: 6px 22px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-align: center;
+  display: inline-block;
+}
+
+button span {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5;
+}
+
+button span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 1s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* img main1 */
+.right-items {
+  justify-content: flex-end;
+  flex: 2;
+}
+
+/* .right-items .image {
+  background-image: url(./images/arcane-of-fools.png);
+  background-color: #1f2937;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+} */
