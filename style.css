@@ -3,8 +3,8 @@
 /* global rules */
 body {
   margin: 0;
+  padding: 0;
   font-family: "Ubuntu", sans-serif;
-  box-sizing: border-box;
 }
 
 ul {
@@ -19,48 +19,37 @@ a {
   color: #e5e7eb;
 }
 
-.wrapper {
-  min-height: 100vh;
-  min-width: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 /* sections */
 .section-1 {
-  background-image: url(./images/sands-of-hope.png);
-  background-repeat: no-repeat;
   background-color: #1f2937;
 }
 
 .section-2 {
-  background-color: red;
+  background-color: #f9f8f9;
 }
 
 /* navigation */
 .navigation-bar {
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   background-color: #1f2937;
   box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.3);
-  display: flex;
   height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-contents {
   display: flex;
   flex: 1;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.navigation-bar .header {
+.header {
   display: flex;
+  flex: 1;
   color: #f9faf8;
   font-size: 24px;
-  align-items: center;
 }
 
 .navigation-bar .links {
@@ -73,18 +62,12 @@ a {
 }
 
 /* sidebars and main content */
-.content {
-  display: flex;
-  flex: 1;
-}
-
-.columns {
-  display: flex;
-  flex: 1;
-}
 
 .main {
   flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 .sidebar-first {
@@ -97,7 +80,6 @@ a {
   order: -1;
 }
 
-/* first main section content */
 .banner {
   display: flex;
   margin: 100px 0;
@@ -105,12 +87,13 @@ a {
   gap: 100px;
 }
 
+/* first main section content */
 .left-items {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: flex-start;
   flex: 1;
+  gap: 16px;
 }
 
 .main-hero-text {
@@ -122,7 +105,6 @@ a {
 .secondary-hero-text {
   font-size: 18px;
   color: #e5e7eb;
-  padding-bottom: 8px;
 }
 
 /* sign-up button */
@@ -131,37 +113,14 @@ button {
   color: #e5e7eb;
   padding: 6px 22px;
   border-radius: 4px;
-  font-size: 18px;
-  margin: 8px 0;
+  font-size: 24px;
   border: none;
   cursor: pointer;
-  transition: all 0.5s;
-  text-align: center;
-  display: inline-block;
 }
 
 button span {
   cursor: pointer;
-  position: relative;
   transition: 0.5;
-}
-
-button span::after {
-  content: "\00bb";
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 1s;
-}
-
-button:hover span {
-  padding-right: 25px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 /* img main1 */
@@ -170,11 +129,56 @@ button:hover span:after {
   flex: 2;
 }
 
-/* .right-items .image {
-  background-image: url(./images/arcane-of-fools.png);
+.right-items .image {
+  background-image: url(./images/Nano_cosmic_influx_eee9bfe4-93d5-4b04-975f-a41ea6f7c72d.png);
   background-color: #1f2937;
   width: 100%;
   height: 100%;
-  background-blend-mode: overlay;
+  background-blend-mode: screen;
   background-repeat: no-repeat;
-} */
+}
+
+/* section 2 banner */
+.banner-2 {
+  margin: 100px 0;
+  height: 25em;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 0;
+  gap: 40px;
+  text-align: center;
+}
+
+/* section 2 header */
+.header-section-2 {
+  display: flex;
+  font-weight: bolder;
+  font-size: 36px;
+  color: #1f2937;
+}
+
+/* content section 2 */
+.content-section-2 {
+  display: flex;
+  gap: 2em;
+}
+
+/* image and description */
+.image-description {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-grow: 0;
+  width: 180px;
+  height: fit-content;
+}
+
+/* images section -2 */
+.image-section-2 {
+  display: flex;
+  border: 2px solid #3882f6;
+  width: 150px;
+  height: 160px;
+  border-radius: 8px;
+}
