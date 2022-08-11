@@ -25,7 +25,15 @@ a {
 }
 
 .section-2 {
-  background-color: #f9f8f9;
+  background-color: #ffff;
+}
+
+.section-3 {
+  background-color: #e5e7eb;
+}
+
+.section-4 {
+  background-color: #ffff;
 }
 
 /* navigation */
@@ -59,6 +67,12 @@ a {
 
 .footer {
   background-color: #1f2937;
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #f9faf8;
 }
 
 /* sidebars and main content */
@@ -82,9 +96,11 @@ a {
 
 .banner {
   display: flex;
-  margin: 100px 0;
+  margin: 2em 0;
   height: 25em;
   gap: 100px;
+  padding: 0;
+  justify-content: center;
 }
 
 /* first main section content */
@@ -108,11 +124,11 @@ a {
 }
 
 /* sign-up button */
-button {
+.button {
   background-color: #3882f6;
   color: #e5e7eb;
   padding: 6px 22px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 24px;
   border: none;
   cursor: pointer;
@@ -140,7 +156,7 @@ button span {
 
 /* section 2 banner */
 .banner-2 {
-  margin: 100px 0;
+  margin: 2em 0;
   height: 25em;
   display: flex;
   flex-flow: column wrap;
@@ -181,4 +197,81 @@ button span {
   width: 150px;
   height: 160px;
   border-radius: 8px;
+}
+
+/* section 3 quote */
+.quote-container {
+  width: 40%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 2em;
+}
+.quote {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.quote-credits {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* section-4 banner */
+.banner-4 {
+  display: flex;
+  margin: 0;
+  height: 25em;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section-4 container */
+.call-to-action-container {
+  background-color: #3882f6;
+  border-radius: 8px;
+  display: flex;
+  gap: 10em;
+  flex: 1;
+  padding: 40px 100px;
+}
+
+/* section-4 text container */
+.text-container {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
+}
+
+/* section-4 text */
+.header-section-4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.header-subtext-section-4 {
+  font-size: 18px;
+  color: #f9faf8;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.button2 {
+  background-color: #3882f6;
+  color: #ffff;
+  border-radius: 8px;
+  font-size: 22px;
+  padding: 8px 50px;
+  border-color: #ffff;
+  cursor: pointer;
 }
